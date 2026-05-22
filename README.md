@@ -1,3 +1,19 @@
+# Xinzuo Theme — Challenge Submission
+
+## Fixes
+See [NOTE.md](./NOTE.md) for a full breakdown of what i found, why i picked it, and what i changed.
+
+---
+
+## Loom Video
+
+i'm really sorry about this — i wasn't able to record the Loom video. i don't have a webcam on my computer, and my phone is a Redmi Note 8 and honestly the camera quality is quite bad, it couldn't produce anything worth submitting. i didn't want to hand in something that looked worse than the work itself.
+
+i genuinely appreciate the opportunity and i don't take it lightly. If you're open to it, maybe we could schedule a short call where i can walk you through everything i did and why. By then i would have sorted out a webcam or a better way to record. i'll make sure it doesn't happen again.
+
+Thank you for understanding.
+
+
 # Xinzuo Shopify clone — TYICDI hiring task
 
 A sanitised, single-command clone of [xinzuo.com.au](https://xinzuo.com.au) running on your **own** free Shopify dev store: real Liquid theme, ~50 sample products (the ones the homepage actually references, plus backfill), 68 collections, 17 pages, 5 articles, and 162 optimised images. Your 2-hour timed window starts when you tick the commit gate on the [hiring portal](https://apply.toldyouicoulddoit.com). Setup below does **not** count against the timer — do it ahead of time.

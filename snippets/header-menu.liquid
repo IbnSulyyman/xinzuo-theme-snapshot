@@ -1,5 +1,11 @@
 {% liquid
   assign block_settings = block.settings
+  # Fallback to main-menu if main-menu-restructured doesn't exist
+  if block_settings.menu == blank or block_settings.menu.links.size == 0
+    assign block_settings_menu = linklists['main-menu']
+  else
+    assign block_settings_menu = block_settings.menu
+  endif
   assign menu_content_type = block_settings.menu_style | default: 'text'
   assign image_border_radius = block_settings.image_border_radius
   assign color_scheme_classes = ''
@@ -24,7 +30,7 @@
 %}
 
 {% capture children %}
-  {% for link in block_settings.menu.links %}
+  {% for link in block_settings_menu.links %}
     {% assign nav_display_title = link.title %}
     {% if link.title == "Sets" %}
       {% assign nav_display_title = "Knife Sets" %}
@@ -91,7 +97,7 @@
     style="{% render 'menu-font-styles', settings: block_settings %}"
   >
     <ul class="home-menu-ul">
-      {% for link in block_settings.menu.links %}
+      {% for link in block_settings_menu.links %}
         {% assign nav_display_title = link.title %}
         {% if link.title == "Sets" %}
           {% assign nav_display_title = "Knife Sets" %}
