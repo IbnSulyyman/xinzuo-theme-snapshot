@@ -161,7 +161,6 @@ class ProductFormComponent extends Component {
    */
   handleSubmit(event) {
     event.preventDefault();
-    console.log(event)
 
     const form = this.querySelector("form");
     const formData = new FormData(form);
